@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="de">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>lolrec – Datenschutz</title>
+  <style>
+    :root { --bg: #0e1015; --text: #e6e8ee; --muted: #8b92a3; --accent: #72dfff; }
+    body { margin: 0; background: var(--bg); color: var(--text); font: 16px/1.6 system-ui, -apple-system, "Segoe UI", sans-serif; }
+    main { max-width: 680px; margin: 0 auto; padding: 3rem 1rem; }
+    h2 { margin-top: 2rem; font-size: 1.15rem; }
+    a { color: var(--accent); }
+    .muted { color: var(--muted); }
+  </style>
+</head>
+<body>
+<main>
+  <h1>Datenschutzerklärung für lolrec</h1>
+  <p class="muted">Stand: Oktober 2026</p>
+
+  <h2>Wer ist verantwortlich?</h2>
+  <p>lolrec ist ein privates, nicht kommerzielles Programm. Kontakt: <a href="mailto:kk485790@gmail.com">kk485790@gmail.com</a></p>
+
+  <h2>Grundsatz</h2>
+  <p>lolrec läuft ausschließlich auf dem Windows-PC des Nutzers. Es gibt keinen Server des Entwicklers:
+    Der Entwickler erhält keine Daten, keine Aufnahmen und keine Zugangsdaten. Es gibt keine Werbung,
+    keine Analyse-Tools und kein Tracking.</p>
+
+  <h2>Welche Daten verarbeitet lolrec?</h2>
+  <ul>
+    <li><b>Spieldaten</b> (Champion, Kills, Tode, Ergebnis, Scoreboard mit den Riot-IDs der Mitspieler) aus der
+      lokalen Schnittstelle des League-of-Legends-Clients. Sie werden nur auf dem PC gespeichert.</li>
+    <li><b>Aufnahmen</b>, die OBS Studio auf dem PC erstellt.</li>
+    <li><b>Notizen und Ziele</b>, die der Nutzer selbst einträgt, nur auf dem PC.</li>
+  </ul>
+
+  <h2>Google Drive</h2>
+  <p>Wenn der Nutzer Google Drive verbindet, nutzt lolrec ausschließlich die Berechtigung
+    <code>drive.file</code>. Damit kann lolrec nur Dateien sehen und verwalten, die es selbst angelegt hat
+    (den Ordner „lolrec“ und die hochgeladenen Aufnahmen), nicht die übrigen Dateien im Drive.</p>
+  <ul>
+    <li>lolrec lädt Aufnahmen in das Drive des Nutzers hoch, gibt sie per Link frei („Jeder mit dem Link“)
+      und spielt sie bei Bedarf von dort ab.</li>
+    <li>Das Zugriffstoken wird nur lokal gespeichert und mit Windows (DPAPI) für das Benutzerkonto verschlüsselt.</li>
+    <li>Daten von Google werden nicht an Dritte weitergegeben, nicht für Werbung verwendet und nicht
+      für das Training von KI-Modellen genutzt.</li>
+  </ul>
+  <p>Die Nutzung von Daten, die lolrec über Google-APIs erhält, entspricht der
+    <a href="https://developers.google.com/terms/api-services-user-data-policy">Google API Services User Data Policy</a>,
+    einschließlich der Anforderungen zur eingeschränkten Nutzung (Limited Use).</p>
+
+  <h2>Discord</h2>
+  <p>Wenn der Nutzer Discord verbindet, erhält lolrec nur einen Webhook für den gewählten Channel und
+    postet darüber Spielergebnisse und Clips. Das Discord-Zugriffstoken wird sofort widerrufen.
+    Der Discord-Status (Rich Presence) wird lokal über die Discord-App gesetzt.</p>
+
+  <h2>Widerruf und Löschung</h2>
+  <ul>
+    <li>In lolrec: „Drive connected ✓“ bzw. „Disconnect“ (Discord) trennt die Verbindung und widerruft den Zugriff.</li>
+    <li>Bei Google jederzeit unter <a href="https://myaccount.google.com/permissions">myaccount.google.com/permissions</a>.</li>
+    <li>Alle lokalen Daten liegen in <code>%APPDATA%\lolrec</code> und können dort gelöscht werden.
+      Hochgeladene Dateien bleiben im Drive des Nutzers, bis er sie löscht.</li>
+  </ul>
+</main>
+</body>
+</html>
