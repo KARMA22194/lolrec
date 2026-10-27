@@ -16,7 +16,7 @@
 <body>
 <main>
   <h1>Datenschutzerklärung für lolrec</h1>
-  <p class="muted">Stand: Oktober 2026</p>
+  <p class="muted">Stand: 24. Oktober 2026</p>
 
   <h2>Wer ist verantwortlich?</h2>
   <p>lolrec ist ein privates, nicht kommerzielles Programm. Kontakt: <a href="mailto:kk485790@gmail.com">kk485790@gmail.com</a></p>
@@ -32,15 +32,46 @@
       lokalen Schnittstelle des League-of-Legends-Clients. Sie werden nur auf dem PC gespeichert.</li>
     <li><b>Aufnahmen</b>, die OBS Studio auf dem PC erstellt.</li>
     <li><b>Notizen und Ziele</b>, die der Nutzer selbst einträgt, nur auf dem PC.</li>
+    <li><b>Profile anderer Spieler</b> (Riot-ID, Rang, letzte Spiele), die der Nutzer in lolrec öffnet, aus dem
+      League-Client. lolrec legt davon eine Kopie auf dem PC ab, damit sie auch ohne geöffneten Client sichtbar sind.</li>
   </ul>
+
+  <h2>Ton: Spiel, Discord und Mikrofon</h2>
+  <p>Welche Tonquellen aufgenommen werden, wählt der Nutzer in den Einstellungen. Standardmäßig nur der Spielton.</p>
+  <ul>
+    <li><b>Mikrofon</b> (aus, bis der Nutzer es einschaltet): die eigene Stimme.</li>
+    <li><b>Discord</b> (aus, bis der Nutzer es einschaltet): der Sprachchat, also auch die <b>Stimmen anderer
+      Personen</b>. Der Nutzer darf das nur mit deren Einverständnis einschalten. Aufnahmen mit Stimmen anderer
+      sollten nicht per Link geteilt werden (siehe Google Drive).</li>
+    <li>Alles bleibt in den Aufnahmen auf dem PC, solange der Nutzer sie nicht selbst hochlädt oder teilt.</li>
+  </ul>
+
+  <h2>Tastatur und Maus (Eingabe-Aufzeichnung)</h2>
+  <p>Nur wenn der Nutzer die Eingabe-Aufzeichnung einschaltet: Während eines Spiels merkt sich lolrec, wann
+    Spieltasten (z. B. Q, W, E, R, D, F) und Maustasten gedrückt werden, um sie in Clips einzublenden. Gedrückte
+    Tasten werden nur aufgezeichnet, während das League-Spielfenster im Vordergrund ist, also nicht beim Tippen in
+    anderen Programmen. Es werden keine Texte gespeichert. Die Daten bleiben auf dem PC.</p>
+
+  <h2>Updates</h2>
+  <p>lolrec fragt kurz nach dem Start und danach alle 30 Minuten bei GitHub
+    (<code>api.github.com</code>, Projekt <code>KARMA22194/lolrec</code>) nach einer neuen Version. Dabei sieht
+    GitHub, wie bei jedem Webseitenaufruf, die IP-Adresse. Ein Update wird nur installiert, wenn es mit dem
+    Schlüssel des Entwicklers signiert ist. Die Suche lässt sich in den Einstellungen abschalten.</p>
+
+  <h2>Bilder von Riot und Community Dragon</h2>
+  <p>Champion-, Gegenstands- und Rang-Bilder lädt lolrec von <code>ddragon.leagueoflegends.com</code> (Riot) und
+    <code>raw.communitydragon.org</code>. Diese Server sehen dabei die IP-Adresse, aber keine Spieldaten.</p>
 
   <h2>Google Drive</h2>
   <p>Wenn der Nutzer Google Drive verbindet, nutzt lolrec ausschließlich die Berechtigung
     <code>drive.file</code>. Damit kann lolrec nur Dateien sehen und verwalten, die es selbst angelegt hat
     (den Ordner „lolrec“ und die hochgeladenen Aufnahmen), nicht die übrigen Dateien im Drive.</p>
   <ul>
-    <li>lolrec lädt Aufnahmen in das Drive des Nutzers hoch, gibt sie per Link frei („Jeder mit dem Link“)
-      und spielt sie bei Bedarf von dort ab.</li>
+    <li>lolrec lädt Aufnahmen in das Drive des Nutzers hoch und spielt sie bei Bedarf von dort ab.</li>
+    <li>Ist „Videos per Link freigeben“ eingeschaltet, gibt lolrec hochgeladene Videos für „Jeder mit dem Link“
+      frei, damit sie in Discord geteilt werden können. Ausgeschaltet kann nur der Nutzer selbst sie öffnen.</li>
+    <li>Um anzuzeigen, mit welchem Konto Drive verbunden ist, liest lolrec die <b>E-Mail-Adresse</b> des Google-Kontos
+      und den belegten Speicher aus. Beides wird nur angezeigt, nicht gespeichert.</li>
     <li>Das Zugriffstoken wird nur lokal gespeichert und mit Windows (DPAPI) für das Benutzerkonto verschlüsselt.</li>
     <li>Daten von Google werden nicht an Dritte weitergegeben, nicht für Werbung verwendet und nicht
       für das Training von KI-Modellen genutzt.</li>
