@@ -16,7 +16,7 @@
 <body>
 <main>
   <h1>Datenschutzerklärung für lolrec</h1>
-  <p class="muted">Stand: 24. November 2026</p>
+  <p class="muted">Stand: 26. November 2026</p>
 
   <h2>Wer ist verantwortlich?</h2>
   <p>lolrec ist ein privates, nicht kommerzielles Programm. Kontakt: <a href="mailto:kk485790@gmail.com">kk485790@gmail.com</a></p>
@@ -31,12 +31,16 @@
     <li><b>Spieldaten</b> (Champion, Kills, Tode, Ergebnis, Scoreboard mit den Riot-IDs und Rängen der Mitspieler,
       Item-Käufe, Skill-Reihenfolge, der Spielverlauf pro Minute mit Gold, Erfahrung, Farm und Position aller Spieler auf
       der Karte und die Statistik am Spielende) aus der lokalen Schnittstelle des Spiels und des
-      League-of-Legends-Clients. Sie werden nur auf dem PC gespeichert.</li>
+      League-of-Legends-Clients. Sie werden auf dem PC gespeichert (und in der eigenen Drive-Sicherung, siehe Google Drive).</li>
     <li><b>Aufnahmen</b>, die OBS Studio auf dem PC erstellt.</li>
     <li><b>Mikrofontest</b>: ein paar Sekunden Ton vom gewählten Mikrofon. Er bleibt nur im
       Arbeitsspeicher, bis lolrec beendet oder der Test wiederholt wird, und wird nicht auf dem PC gespeichert.</li>
-    <li><b>Notizen und Ziele</b>, die der Nutzer selbst einträgt, nur auf dem PC.</li>
-    <li><b>Quiz-Antworten</b> (welche Frage zu welchem eigenen Tod richtig beantwortet wurde), nur auf dem PC.</li>
+    <li><b>Notizen und Ziele</b>, die der Nutzer selbst einträgt, auf dem PC (und in der Drive-Sicherung).</li>
+    <li><b>Quiz-Antworten</b> (welche Frage zu welchem eigenen Tod richtig beantwortet wurde), auf dem PC (und in der Drive-Sicherung).</li>
+    <li><b>Bewertungen eigener Tode</b> (Beta „Spiel analysieren“, nur wenn der Nutzer sie einschaltet): was der Nutzer
+      zu einem eigenen Tod auswählt und schreibt (Art des Fehlers, ob der Hinweis stimmte, Kommentar) und der angezeigte
+      Hinweis. Der Hinweis wird auf dem PC aus dem Spielverlauf berechnet. Die Bewertungen bleiben auf dem PC und in der
+      eigenen Drive-Sicherung (siehe Google Drive); lolrec gibt sie nicht weiter.</li>
     <li><b>Profile anderer Spieler</b> (Riot-ID, Rang, letzte Spiele) aus dem League-Client: die der Nutzer in lolrec
       öffnet und nach jedem Spiel die der Mit- und Gegenspieler dieses Spiels. lolrec legt davon eine Kopie auf dem PC
       ab, damit sie auch ohne geöffneten Client gefunden werden. Die Kopien verlassen den PC nicht.</li>
@@ -74,6 +78,9 @@
     (den Ordner „lolrec“ und die hochgeladenen Aufnahmen), nicht die übrigen Dateien im Drive.</p>
   <ul>
     <li>lolrec lädt Aufnahmen in das Drive des Nutzers hoch und spielt sie bei Bedarf von dort ab.</li>
+    <li>Ist Drive verbunden und die tägliche Sicherung eingeschaltet (Standard, abschaltbar), legt lolrec im Ordner „lolrec“ eine kleine Sicherung
+      ab: Spieldaten, Notizen, Ziele, Quiz-Antworten, Bewertungen eigener Tode und Einstellungen, ohne Passwörter und
+      Zugangsdaten. Sie dient dazu, die Daten auf einen neuen PC zu übernehmen oder die Spiele auf einem zweiten Gerät des Nutzers anzuzeigen.</li>
     <li>Ist „Videos per Link freigeben“ eingeschaltet, gibt lolrec hochgeladene Videos für „Jeder mit dem Link“
       frei, damit sie in Discord geteilt werden können. Ausgeschaltet kann nur der Nutzer selbst sie öffnen.</li>
     <li>Um anzuzeigen, mit welchem Konto Drive verbunden ist, liest lolrec die <b>E-Mail-Adresse</b> des Google-Kontos
